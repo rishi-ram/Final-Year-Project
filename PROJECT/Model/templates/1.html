@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="ind.css">
+    <title>Vehicle</title>
+    <!-- <title>Car Rent &mdash; Free Website Template by Colorlib</title> -->
+    <!-- <meta charset="utf-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <!-- <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-3 ">
+              <div class="site-logo">
+                <a href="index.html">CarRent</a>
+              </div>
+            </div>
+
+            <div class="col-9  text-right">
+              
+
+              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
+
+              
+
+              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="services.html" class="nav-link">Services</a></li>
+                  <li><a href="cars.html" class="nav-link">Cars</a></li>
+                  <li><a href="about.html" class="nav-link">About</a></li>
+                  <li><a href="blog.html" class="nav-link">Blog</a></li>
+                  <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            
+          </div>
+        </div>
+
+      </header> -->
+
+    <div class="ftco-blocks-cover-1">
+      <div class="ftco-cover-1 overlay" style="background-image: url('images/hero_1.jpg')">
+        <div class="container"> 
+          <div class="container align-items-center">
+            <div class="row align-items-center">
+              <div class="col-lg-5">
+                <div class="feature-car-rent-box-1">
+                  <form   class="form-horizontal"  action="/result" method="POST" enctype = "multipart/form-data">
+                    <br>
+                    <div class="form-group"><label id="power" class="control-label col-sm-4" for="comp">Insurance Comapany</label>
+                        <div class="col-sm-6"><select id="power" name="comp" id="comp">
+                        <!-- 'A', 'AA', 'AC', 'B', 'BB', 'BC', 'BQ', 'C', 'DA', 'O', 'RE' -->
+                        <option value="A">Aviva Insurance</option>
+                        <option value="AA">Aditya Brila Insurance</option>
+                        <option value="AC">Navi General Insurance</option>
+                        <option value="B">Shriram Insurance</option>
+                        <option value="BB">Reliance General Insurance</option>
+                        <option value="BC">Liberty General Insurance</option>
+                        <option value="BQ">Royal Sundaram Insurance</option>
+                        <option value="C">The Oriental Insurance</option>
+                        <option value="DA">Tata AIG Insurance</option>
+                        <option value="O">Magma HDI General Insurance</option>
+                        <option value="RE">Edelweiss General Insurance</option>
+                    </select>
+                </div>
+            </div>
+                    <br>
+                    <div class="form-group"><label id="power" class="control-label col-sm-4" for="cost">Cost Of vehicle</label>
+                        <div class="col-sm-6"><input id="power" type="number" name="cost" id="cost"></div></div>
+                    <br>
+                    <div class="form-group"><label id="power" class="control-label col-sm-4" for="min_cover">Minimun coverage</label>
+                        <div class="col-sm-6"><input id="power" type="number" name="min_cover" id="min_cover"></div></div>
+                    <br>
+                    <div class="form-group"><label id="power" class="control-label col-sm-4" for="max_cover">Maximum coverage</label>
+                        <div class="col-sm-6"><input id="power" type="number" name="max_cover" id="max_cover"></div></div>
+                    <br>
+                    <div class="form-group"><label id="power" class="control-label col-sm-4" for="exp">Insurance Expiry date</label>
+                        <div class="col-sm-6"><input id="power" type="date" name="exp" id="exp"></div></div>
+                    <br>
+                   
+                            <div class="form-group"><label id="power" class="control-label col-sm-4" for="image_file">car Image</label>
+                                <div class="col-sm-6">  <input id="power" type="file" name="image_file" id="img" accept="image/png, image/jpg, image/jpeg">
+                        </div>
+                        </div>
+                        <br>
+                   <button type="submit"  value="Submit">Submit</button>
+                </form>
+                </div>
+        </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>
+

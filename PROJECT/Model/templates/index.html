@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ind.css') }}">
+    <title>Vehicle</title>
+</head>
+<body style="background-image: url({{ url_for('static', filename='cpd.jpg') }});">
+    <h1>Vehicle Insurance Prediction</h1>
+    <br>
+    <br>
+   
+    <div class="form-wrapper">
+        <form   class="form-horizontal"  action="/result" method="POST" enctype = "multipart/form-data">
+        <br>
+        <div class="form-group"><label id="power" class="control-label col-sm-4" for="comp">Insurance Comapany</label>
+            <div class="col-sm-6"><select id="power" name="comp" id="comp">
+            <!-- 'A', 'AA', 'AC', 'B', 'BB', 'BC', 'BQ', 'C', 'DA', 'O', 'RE' -->
+            <option value="A">Aviva Insurance</option>
+            <option value="AA">Aditya Brila Insurance</option>
+            <option value="AC">Navi General Insurance</option>
+            <option value="B">Shriram Insurance</option>
+            <option value="BB">Reliance General Insurance</option>
+            <option value="BC">Liberty General Insurance</option>
+            <option value="BQ">Royal Sundaram Insurance</option>
+            <option value="C">The Oriental Insurance</option>
+            <option value="DA">Tata AIG Insurance</option>
+            <option value="O">Magma HDI General Insurance</option>
+            <option value="RE">Edelweiss General Insurance</option>
+        </select>
+    </div>
+</div>
+        <br>
+        <div class="form-group"><label id="power" class="control-label col-sm-4" for="cost">Cost Of vehicle</label>
+            <div class="col-sm-6"><input id="power" type="number" name="cost" id="cost"></div></div>
+        <br>
+        <div class="form-group"><label id="power" class="control-label col-sm-4" for="min_cover">Minimun coverage</label>
+            <div class="col-sm-6"><input id="power" type="number" name="min_cover" id="min_cover"></div></div>
+        <br>
+        <div class="form-group"><label id="power" class="control-label col-sm-4" for="max_cover">Maximum coverage</label>
+            <div class="col-sm-6"><input id="power" type="number" name="max_cover" id="max_cover"></div></div>
+        <br>
+        <div class="form-group"><label id="power" class="control-label col-sm-4" for="exp">Insurance Expiry date</label>
+            <div class="col-sm-6"><input id="power" type="date" name="exp" id="exp"></div></div>
+        <br>
+       
+                <div class="form-group"><label id="power" class="control-label col-sm-4" for="image_file">car Image</label>
+                    <div class="col-sm-6">  <input id="power" type="file" name="image_file" id="img" accept="image/png, image/jpg, image/jpeg">
+            </div>
+            </div>
+            <br>
+       <button type="submit"  value="Submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* body {
+	background-image:url('E-bank.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(12, 11, 11);
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url("{{ url_for('static', filename='cgd.jpg') }}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+#power{
+  height: 50px;
+  font-size:20px;
+  
+}
+
+
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+.center h1{
+  text-align:center;
+  color:white;
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+}
+
+
+ 
+.form-wrapper{
+    color:black;
+    margin-left: auto;
+    margin-right:auto ;
+    height: auto;
+    width:800px;
+    background: rgba(250, 249, 249, 0.822);     
+    padding:20px; 
+    
+}
+*{
+    box-sizing: border-box;
+}
+#survey-form>div{
+    margin: 20px;
+}
+#survey-form{
+    font-size: 25px;
+}
+.input-styling{
+    width:100%;
+    height: 30px;
+    border:rgb(141, 137, 137) 1px solid;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+button{
+    width: 50%;
+    margin-left: 100px;
+    text-shadow: 0 0 3px #252424, 0 0 5px #f4f4f7;
+    height: 40px;
+    background-color:rgb(246, 247, 250);
+    border:rgba(13, 14, 12, 0.856) 1px solid;
+    border-radius: 5px;
+    color: rgba(24, 23, 23, 0.979);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+} 
+h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    /* background: hsl(200 100% 80%); */
+    background-image: url("{{ url_for('static', filename='pe.jpg') }}");
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  h1 {
+    position: relative;
+    font-size: 5rem;
+    text-align: center;
+    color: rgb(8, 8, 8);
+  }
+  
+  
+  
+ 
+  
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+  

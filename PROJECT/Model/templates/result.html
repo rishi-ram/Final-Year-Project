@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;background-image: url({{ url_for('static', filename='cpd.jpg') }});">
+    <h1>Condition</h1>
+    {% if condition==1 %}
+        <h2>Damage Detected</h2>
+    {% else %}
+        <h2>No Damage Detected</h2>
+    {% endif %}
+    <h1>Claimable Amount </h1>
+    <h2>{{Amount}}</h2>
+    <a href="{{ url }}">TRY AGAIN</a>
+</body>
+</html>
